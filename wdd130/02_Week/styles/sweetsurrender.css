@@ -1,0 +1,24 @@
+.nav-button {
+    color: red;
+}
+
+
+nav div a {
+    color: green;
+}
+
+nav a {
+    color: pink;
+}
+
+#logo {
+    width: 200px;
+    border: 5px solid black;
+}
+
+
+/* Class takes priority over element.
+ Between elements, the last element takes priority.
+ Thing written in the html takes precedence over things on the css file.
+/* ID > Class >
+ Class > Elem; last Elem > Elem; HTML > CSS. */
