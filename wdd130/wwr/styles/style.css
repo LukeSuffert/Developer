@@ -391,4 +391,21 @@ footer .social img {
     footer {
         margin-top: 25px;
     }
+
+    #faqs {
+        margin-top: 0;
+    }
+
+    #faqs-msg {
+        margin-top: 0;
+    }
+
+    .faqs-title {
+        font-size: 25px;
+    }
+
+    .faq-item {
+        margin: 50px auto;
+        width: 60%;
+    }
 }
