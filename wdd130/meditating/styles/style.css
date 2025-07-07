@@ -1,0 +1,182 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+  --primary-color: #7FB8A4;
+  --secondary-color: #F4A261;
+  --accent1-color: #2E3A59;
+  --accent2-color: #F7F9F9;
+  --heading-font: "Libre Baskerville";
+  --paragraph-font: "Lora";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+  line-height: 1.6;
+}
+
+/* HEADER NAVIGATION */
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--accent1-color);
+  padding: 1rem 0;
+}
+
+header nav a {
+  color: white;
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+header nav a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* BIG LOGO */
+#big-logo {
+  text-align: center;
+  padding: 2rem 0;
+    background-color: var(--secondary-color);
+}
+
+#big-logo img {
+  max-width: 200px;
+  border-radius: 50%;
+}
+
+/* SECTION STYLING */
+#mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+#mission .section-title {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent1-color);
+  font-family: var(--heading-font);
+}
+
+
+#mission img.home-img {
+  order: 1;
+  width: 100%;
+  border-radius: 10px;
+}
+
+#mission .mission-text {
+
+  order: 2;
+  border: 10px double #7FB8A4;
+  padding: 1rem;
+}
+
+/* START SECTION – Text left, image right */
+#start {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+#start .start-text {
+  order: 1;
+  border: 10px double #7FB8A4;
+  padding: 1rem;
+  font-family: var(--heading-font);
+}
+
+#start img.home-img {
+  order: 2;
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+/* CTA BUTTONS */
+#buttons {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: var(--paragraph-font);
+}
+
+#buttons h1 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: var(--accent1-color);
+}
+
+.resources {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 100px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--accent1-color);
+  background-color: white;
+  transition: all 0.3s ease;
+  font-family: var(--heading-font);
+}
+
+.resources:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer .logo-foot {
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
+  border-radius: 50%;
+}
+
+footer .social {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .social img {
+  width: 48px;
+  border: #F4A261 2px solid;
+}

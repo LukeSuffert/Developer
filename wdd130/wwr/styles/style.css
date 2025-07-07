@@ -87,6 +87,7 @@ header {
     grid-template-columns: 150px auto;
     background-color: #dd6e42;
     font-family: var(--paragraph-font);
+    margin: 50px 0;
 }
 
 nav a:hover {
